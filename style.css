@@ -1,0 +1,496 @@
+html {
+  width: 100%;
+}
+
+body {
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "メイリオ", sans-serif;
+  background: white;
+  margin: 0;
+  width: 82%;
+  margin: 0;
+  padding-left: 18%;
+  font-size: 100%;
+}
+
+header {
+  width: 100%;
+}
+
+.black {
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  z-index: 100;
+}
+
+.welcome {
+  position: absolute;
+  top: 120%;
+  left: 30%;
+  z-index: 100;
+}
+
+.rogo {
+  display: block;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.mac, .mac2 {
+  height: 100vh;
+  max-width: 100%;
+  object-fit: cover;
+
+  animation: move 2s;
+}
+
+.mac2 {
+  display: none;
+}
+
+@keyframes move {
+  from {transform: translateX(-125%);}
+  to {transform: translateX(0);}
+}
+
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 18%;
+  background: white;
+  vertical-align: middle;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  text-align: center;
+}
+
+nav ul li a:hover h1 {
+  transform: rotate(5deg);
+}
+
+nav ul li a h1 {
+  font-weight: normal;
+}
+
+header ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+#works {
+  position: relative;
+}
+
+#about img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+h2 {
+  text-align: center;
+  font-size: 200%;
+  margin: 0;
+  padding-top: 80px;
+}
+
+.about1 {
+  display: flex;
+  align-items: center;
+  padding: 100px 0 150px 0;
+}
+
+.about2, .about3 {
+  width: 50%;
+  text-align: center;
+}
+
+#skills, #contact {
+  background: rgb(59, 59, 59);
+  color: white;
+}
+
+#skills span {
+  color: orange;
+}
+
+.responsive img, .maintenance img {
+  filter: invert(100%);
+}
+
+.container {
+  display: flex;
+}
+
+.container > div {
+  padding: 104px 4% 150px 4%;
+  text-align: center;
+}
+
+.cording {
+  font-size: 39px;
+  margin: 0;
+}
+
+.img img {
+  width: 80%;
+  transition: 1s;
+  text-align: center;
+}
+
+.img2, .img3{
+  text-align: center;
+  padding: 50px 0 100px 0;
+}
+
+.img {
+  display: flex;
+}
+
+.img img:hover {
+  transform: scale(1.1);
+  box-shadow: 10px 10px 10px rgb(59, 59, 59);
+}
+
+#contact {
+  text-align: center;
+}
+
+#contact h3 {
+  padding-top: 40px;
+}
+
+#contact div {
+  padding-bottom: 20px;
+}
+
+textarea {
+  width: 165px;
+  height: 100px;
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0 0 50px 0;
+  outline: none;
+}
+
+footer {
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.hum input {
+  display: none;
+}
+
+@media screen and (max-width:785px), (min-height: 850px) {
+  .container {
+    display: block;
+  }
+
+  #skills p {
+    padding: 0 10%;
+  }
+
+  .container > div {
+    padding-top: 8vh;
+  }
+
+  .container > div {
+    padding:50px 0 0 0;
+  }
+
+  .container .maintenance {
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (max-width:670px), (min-height: 850px) {
+  .img {
+    display: block;
+  }
+
+  body {
+    width: 100%;
+    padding: 0;
+  }
+
+  .black {
+    left: 5%;
+  }
+
+  .rogo {
+    width: 80%;
+  }
+
+  .welcome {
+    left: 20%;
+  }
+
+  .img > div {
+    margin: 0 auto; 
+    padding: 0;
+  }
+
+  .img .img2 {
+    padding: 50px 0 0 0;
+  }
+
+  .img .img3 {
+    padding: 80px 0 100px 0;
+  }
+
+  .about1 {
+    display: block;
+    padding: 100px 0 100px 0;
+  }
+
+  .about2 {
+    padding-bottom: 50px;
+  }
+
+  .about2, .about3 {
+    margin: 0 auto;
+  }
+
+  header nav {
+    position: fixed;
+    height: auto;
+    width: 100%;
+    display: flex;
+    background: none;
+  }
+
+  header ul {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    display: flex;
+  }
+
+  header ul li {
+    display: block;
+    color: orange;
+    width: 20%;
+  }
+
+  header ul li a {
+    color: orange;
+    font-size: 10px;
+  }
+
+  .li-top {
+    flex: 0.8;
+  }
+
+  .li-contact {
+    flex: 1.2;
+  }
+
+  .mac {
+    display: none;
+  }
+
+  .mac2 {
+    display: block;
+  }
+
+  .menu, .menu span {
+    display: inline-block;
+    box-sizing: border-box;
+  }
+
+  ul h1 {
+    margin: 15px 0 0 0;
+  }
+  
+  .menu {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    top: 10px;
+    right: 10px;
+    z-index: 200;
+
+    transition: 1s;
+  }
+  
+  .menu span {
+    position: absolute;
+    left: 9px;
+    width: 30px;
+    height: 4px;
+    background: orange;
+    border-radius: 4px;
+
+    transition: 1s;
+  }
+  
+  .menu span:nth-last-of-type(1){
+    top: 12px;
+  }
+  
+  .menu span:nth-last-of-type(2){
+    top: 22px;
+  }
+  
+  .menu span {
+    bottom: 14px;
+  }
+  
+  .opacity {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    display: none;
+    opacity: 0;
+  }
+  
+  #disp-btn:checked ~ .opacity {
+    display: block;
+    opacity: 1;
+  }
+
+  .hum input:checked ~ .menu {
+    transform: translateY(25px);
+  }
+
+  .hum input:checked ~ .menu span:nth-last-of-type(1) {
+    transform: translateY(9px) rotate(-45deg);
+  }
+
+  .hum input:checked ~ .menu span:nth-last-of-type(2) {
+    opacity: 0;
+  }
+
+  .hum input:checked ~ .menu span:nth-last-of-type(3) {
+    transform: translateY(-10px) rotate(45deg);
+  }
+  
+  .hum input {
+    display: none;
+  }
+  
+}
+
+@media screen and (max-width: 300px) {
+  .welcome {
+    left: 15%;
+  }
+
+  .li-top {
+    flex: 0.6;
+  }
+
+  .li-contact {
+    flex: 1.4;
+  }
+}
+
+@media screen and (min-height: 850px) and (min-width: 650px) {
+  .rogo {
+    width: 150%;
+  }
+
+  .welcome {
+    width: 150%;
+  }
+
+  .menu {
+    width: 100px;
+    height: 100px;
+  }
+
+  .menu span {
+    left: 18px;
+    width: 60px;
+    height: 8px;
+  }
+
+  .menu span:nth-last-of-type(1){
+    top: 24px;
+  }
+  
+  .menu span:nth-last-of-type(2){
+    top: 44px;
+  }
+  
+  .menu span {
+    bottom: 28px;
+  }
+
+  .hum input:checked ~ .menu span:nth-last-of-type(1) {
+    transform: translateY(18px) rotate(-45deg);
+  }
+
+  .hum input:checked ~ .menu span:nth-last-of-type(3) {
+    transform: translateY(-20px) rotate(45deg);
+  }
+
+  nav ul li a h1 {
+    font-size: 30px;
+    margin-top: 30px;
+  }
+
+  .hum input:checked ~ .menu {
+    transform: translateY(70px);
+  }
+
+  body {
+    font-size: 200%;
+  }
+
+  #about img {
+    width: 300px;
+    height: 300px;
+  }
+
+  #skills img {
+    width: 96px;
+    height: 96px;
+  }
+
+  .cording {
+    font-size: 78px;
+  }
+
+  #name, #email {
+    width: 300px;
+    height: 30px;
+  }
+
+  textarea {
+    width: 300px;
+    height: 200px;
+  }
+
+  button {
+    width: 100px;
+    height: 100px;
+    font-size: 25px;
+  }
+
+  footer {
+    height: 100px;
+    line-height: 100px;
+  }
+}
